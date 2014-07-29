@@ -24,6 +24,13 @@
 		52CB1E7119877CA200D11CB4 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CB1E6919877CA200D11CB4 /* FMDatabasePool.m */; };
 		52CB1E7219877CA200D11CB4 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CB1E6B19877CA200D11CB4 /* FMDatabaseQueue.m */; };
 		52CB1E7319877CA200D11CB4 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CB1E6E19877CA200D11CB4 /* FMResultSet.m */; };
+		52CB1E8E1987822000D11CB4 /* ContactListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CB1E8C1987822000D11CB4 /* ContactListVC.m */; };
+		52CB1E8F1987822000D11CB4 /* ContactListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52CB1E8D1987822000D11CB4 /* ContactListVC.xib */; };
+		52CB1E931987833D00D11CB4 /* ChatListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CB1E911987833D00D11CB4 /* ChatListVC.m */; };
+		52CB1E941987833D00D11CB4 /* ChatListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52CB1E921987833D00D11CB4 /* ChatListVC.xib */; };
+		52CB1E961987846000D11CB4 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 52CB1E951987846000D11CB4 /* libsqlite3.dylib */; };
+		52CB1E9A19878E3400D11CB4 /* AddContactVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CB1E9819878E3400D11CB4 /* AddContactVC.m */; };
+		52CB1E9B19878E3400D11CB4 /* AddContactVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52CB1E9919878E3400D11CB4 /* AddContactVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +71,16 @@
 		52CB1E6C19877CA200D11CB4 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
 		52CB1E6D19877CA200D11CB4 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		52CB1E6E19877CA200D11CB4 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		52CB1E8B1987822000D11CB4 /* ContactListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactListVC.h; sourceTree = "<group>"; };
+		52CB1E8C1987822000D11CB4 /* ContactListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactListVC.m; sourceTree = "<group>"; };
+		52CB1E8D1987822000D11CB4 /* ContactListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactListVC.xib; sourceTree = "<group>"; };
+		52CB1E901987833D00D11CB4 /* ChatListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatListVC.h; sourceTree = "<group>"; };
+		52CB1E911987833D00D11CB4 /* ChatListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatListVC.m; sourceTree = "<group>"; };
+		52CB1E921987833D00D11CB4 /* ChatListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatListVC.xib; sourceTree = "<group>"; };
+		52CB1E951987846000D11CB4 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		52CB1E9719878E3400D11CB4 /* AddContactVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddContactVC.h; sourceTree = "<group>"; };
+		52CB1E9819878E3400D11CB4 /* AddContactVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddContactVC.m; sourceTree = "<group>"; };
+		52CB1E9919878E3400D11CB4 /* AddContactVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddContactVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52CB1E961987846000D11CB4 /* libsqlite3.dylib in Frameworks */,
 				52CB1E361987796700D11CB4 /* CoreGraphics.framework in Frameworks */,
 				52CB1E381987796700D11CB4 /* UIKit.framework in Frameworks */,
 				52CB1E341987796700D11CB4 /* Foundation.framework in Frameworks */,
@@ -113,6 +131,7 @@
 		52CB1E321987796700D11CB4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				52CB1E951987846000D11CB4 /* libsqlite3.dylib */,
 				52CB1E331987796700D11CB4 /* Foundation.framework */,
 				52CB1E351987796700D11CB4 /* CoreGraphics.framework */,
 				52CB1E371987796700D11CB4 /* UIKit.framework */,
@@ -124,6 +143,7 @@
 		52CB1E391987796700D11CB4 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				52CB1E8A1987822000D11CB4 /* Module */,
 				52CB1E421987796700D11CB4 /* AppDelegate.h */,
 				52CB1E431987796700D11CB4 /* AppDelegate.m */,
 				52CB1E451987796700D11CB4 /* Images.xcassets */,
@@ -185,6 +205,22 @@
 				52CB1E6E19877CA200D11CB4 /* FMResultSet.m */,
 			);
 			path = fmdb;
+			sourceTree = "<group>";
+		};
+		52CB1E8A1987822000D11CB4 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				52CB1E8B1987822000D11CB4 /* ContactListVC.h */,
+				52CB1E8C1987822000D11CB4 /* ContactListVC.m */,
+				52CB1E8D1987822000D11CB4 /* ContactListVC.xib */,
+				52CB1E9719878E3400D11CB4 /* AddContactVC.h */,
+				52CB1E9819878E3400D11CB4 /* AddContactVC.m */,
+				52CB1E9919878E3400D11CB4 /* AddContactVC.xib */,
+				52CB1E901987833D00D11CB4 /* ChatListVC.h */,
+				52CB1E911987833D00D11CB4 /* ChatListVC.m */,
+				52CB1E921987833D00D11CB4 /* ChatListVC.xib */,
+			);
+			path = Module;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +298,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52CB1E9B19878E3400D11CB4 /* AddContactVC.xib in Resources */,
+				52CB1E941987833D00D11CB4 /* ChatListVC.xib in Resources */,
+				52CB1E8F1987822000D11CB4 /* ContactListVC.xib in Resources */,
 				52CB1E3E1987796700D11CB4 /* InfoPlist.strings in Resources */,
 				52CB1E461987796700D11CB4 /* Images.xcassets in Resources */,
 			);
@@ -283,11 +322,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				52CB1E6F19877CA200D11CB4 /* FMDatabase.m in Sources */,
+				52CB1E9A19878E3400D11CB4 /* AddContactVC.m in Sources */,
 				52CB1E441987796700D11CB4 /* AppDelegate.m in Sources */,
 				52CB1E7319877CA200D11CB4 /* FMResultSet.m in Sources */,
+				52CB1E8E1987822000D11CB4 /* ContactListVC.m in Sources */,
 				52CB1E7119877CA200D11CB4 /* FMDatabasePool.m in Sources */,
 				52CB1E401987796700D11CB4 /* main.m in Sources */,
 				52CB1E7019877CA200D11CB4 /* FMDatabaseAdditions.m in Sources */,
+				52CB1E931987833D00D11CB4 /* ChatListVC.m in Sources */,
 				52CB1E7219877CA200D11CB4 /* FMDatabaseQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

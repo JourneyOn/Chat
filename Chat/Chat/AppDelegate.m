@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ContactListVC.h"
 
 @implementation AppDelegate
 
@@ -67,5 +68,10 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    ContactListVC *contactVC = [[ContactListVC alloc] initWithNibName:NSStringFromClass([ContactListVC class]) bundle:nil];
+    UINavigationController *rootNAV = [[UINavigationController alloc] initWithRootViewController:contactVC];
+    rootNAV.navigationBar.barStyle = UIBarStyleDefault;
+    self.window.rootViewController = rootNAV;
 }
 @end
