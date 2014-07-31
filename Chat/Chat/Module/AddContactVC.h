@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AddContactVC : UIViewController
 
+@protocol AddContactVCDelegate <NSObject>
+@optional
+- (void)addContactVCDidAddContact;
+@end
+
+
+@interface AddContactVC : UIViewController
+@property (assign, nonatomic) id<AddContactVCDelegate> delegate;
 @end

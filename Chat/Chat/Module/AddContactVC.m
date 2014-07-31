@@ -7,11 +7,12 @@
 //
 
 #import "AddContactVC.h"
+#import "AddContactVCHelper.h"
 
 @interface AddContactVC () <UITextFieldDelegate>
 {
     __weak IBOutlet UITextField *textField;
-    
+    AddContactVCHelper *_helper;
 }
 @end
 
@@ -22,6 +23,8 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+
+        _helper = [AddContactVCHelper new];
     }
     return self;
 }
@@ -55,7 +58,23 @@
 #pragma mark - UIView Event 
 - (void)saveBtnPressed:(UIBarButtonItem *)sender
 {
-    
+    NSError *error = [_helper addContactWithName:textField.text];
+    if (error == nil) {
+        // dismiss keyboard
+        [self.view endEditing:YES];
+        
+        // nodify save success
+        if ([self.delegate respondsToSelector:@selector(addContactVCDidAddContact)]) {
+            [self.delegate addContactVCDidAddContact];
+        }
+        
+        // pop self
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+    else{
+        // hud error message
+        
+    }
 }
 
 #pragma mark - TextField Delegate
