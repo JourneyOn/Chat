@@ -38,6 +38,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5291EF5C1989E6AA00D8B912 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5291EF571989E6AA00D8B912 /* iOSKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FECAB22E198942650093306B;
+			remoteInfo = iOSKit;
+		};
+		5291EF5E1989E6AA00D8B912 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5291EF571989E6AA00D8B912 /* iOSKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FECAB23E198942650093306B;
+			remoteInfo = iOSKitTests;
+		};
 		52CB1E501987796700D11CB4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 52CB1E281987796700D11CB4 /* Project object */;
@@ -55,6 +69,7 @@
 		522CD6671988D56E00563C62 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		522CD66B1988EDBF00563C62 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
 		522CD66C1988EDBF00563C62 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		5291EF571989E6AA00D8B912 /* iOSKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iOSKit.xcodeproj; path = ../../iOSKit/iOSKit/iOSKit.xcodeproj; sourceTree = "<group>"; };
 		52CB1E301987796700D11CB4 /* Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52CB1E331987796700D11CB4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		52CB1E351987796700D11CB4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -138,9 +153,19 @@
 			path = DB;
 			sourceTree = "<group>";
 		};
+		5291EF581989E6AA00D8B912 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5291EF5D1989E6AA00D8B912 /* libiOSKit.a */,
+				5291EF5F1989E6AA00D8B912 /* iOSKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		52CB1E271987796700D11CB4 = {
 			isa = PBXGroup;
 			children = (
+				5291EF571989E6AA00D8B912 /* iOSKit.xcodeproj */,
 				52CB1E6219877CA200D11CB4 /* Thirdparty */,
 				52CB1E391987796700D11CB4 /* Chat */,
 				52CB1E521987796700D11CB4 /* ChatTests */,
@@ -319,6 +344,12 @@
 			mainGroup = 52CB1E271987796700D11CB4;
 			productRefGroup = 52CB1E311987796700D11CB4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5291EF581989E6AA00D8B912 /* Products */;
+					ProjectRef = 5291EF571989E6AA00D8B912 /* iOSKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				52CB1E2F1987796700D11CB4 /* Chat */,
@@ -326,6 +357,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5291EF5D1989E6AA00D8B912 /* libiOSKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libiOSKit.a;
+			remoteRef = 5291EF5C1989E6AA00D8B912 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5291EF5F1989E6AA00D8B912 /* iOSKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = iOSKitTests.xctest;
+			remoteRef = 5291EF5E1989E6AA00D8B912 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		52CB1E2E1987796700D11CB4 /* Resources */ = {
